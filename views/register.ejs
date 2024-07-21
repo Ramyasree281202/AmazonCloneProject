@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+  <div class="bg-reg">
+    <div class="container mt-5">
+      <center><div class="img-log">
+        <img src="../public/Images/amazon_logo.png" width="150px" height="50px">
+       </div></center> 
+  
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+  
+              <!-- Makes POST request to /register route -->
+              <form class="form-reg" action="/register" method="POST">
+                <center><h1>Sign up</h1></center>
+                <div class="form-group">
+                  <label for="email">Your name</label>
+                  <input type="email" class="form-control" name="username" placeholder="first and last name">
+                </div>
+                <div class="form-group">
+                  <label for="number">Phone number</label>
+                  <!-- <DIV class="flex">
+                    <P>IN +91</P> -->
+                  <input type="tel" class="form-control" name="number" placeholder="mobile number">
+                  <!-- </DIV> -->
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="at least 6 characters">
+                </div>
+                <button type="submit" class="btn btn-log">Sign up</button>
+              </form>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <%- include('partials/header') %>
